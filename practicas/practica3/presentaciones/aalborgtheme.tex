@@ -1,0 +1,267 @@
+\documentclass[10pt]{beamer}
+
+
+\usetheme[
+%%% options passed to the outer theme
+%    hidetitle,           % hide the (short) title in the sidebar
+%    hideauthor,          % hide the (short) author in the sidebar
+%   hideinstitute,       % hide the (short) institute in the bottom of the sidebar
+%    shownavsym,          % show the navigation symbols
+%    width=2cm,           % width of the sidebar (default is 2 cm)
+%    hideothersubsections,% hide all subsections but the subsections in the current section
+%    hideallsubsections,  % hide all subsections
+%    left                % right of left position of sidebar (default is right)
+  ]{Aalborg}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+% Change the bar and sidebar colors:
+%\setbeamercolor{Aalborg}{fg=red!20,bg=red}
+\setbeamercolor{Aalborg}{fg=orange!30,bg=orange!50}
+%\setbeamercolor{sidebar}{bg=red!20}
+%\setbeamercolor{sidebar}{bg=white}
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+\setbeamercolor{structure}{fg=orange!80}
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=orange}
+% Change the normal text color background:
+\setbeamercolor{normal text}{bg=mycolor!5}
+% ... and you can of course change a lot more - see the beamer user manual.
+\definecolor{mycolor}{RGB}{204, 204, 255}
+\setbeamercolor{titlepagecolorbox}{fg=white,bg=mycolor}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{helvet}
+
+
+% colored hyperlinks
+\newcommand{\chref}[2]{%
+  \href{#1}{{\usebeamercolor[bg]{Aalborg}#2}}%
+}
+
+\title[ALGORITMO GREEDY]% optional, use only with long paper titles
+{RECUBRIMIENTO MINIMAL DE UN GRAFO}
+
+\date{2017}
+
+\author[Pablo Moreno Megías, Diego Lerena García, Manuel Vallejo Felipe, Ángel Díaz de la Torre, Francisco Navarro Morales, Marcel Kemp Muñoz y David Redondo Correa] % optional, use only with lots of authors
+{
+  Pablo Moreno Megías, Diego Lerena García, Manuel Vallejo Felipe, Ángel Díaz de la Torre, Francisco Navarro Morales, Marcel Kemp Muñoz y David Redondo Correa
+}
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+\institute[
+%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+  Algoritmica, UGR
+] % optional - is placed in the bottom of the sidebar on every slide
+{% is placed on the bottom of the title page
+  Departamento de Ciencias de la Computación e Inteligencia Artificial. \\
+  Universidad de Granada
+  
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+% specify the logo in the top right/left of the slide
+\pgfdeclareimage[height=1cm]{mainlogo}{AAUgraphics/ugr} % placed in the upper left/right corner
+\logo{\pgfuseimage{mainlogo}}
+
+% specify a logo on the titlepage (you can specify additional logos an include them in 
+% institute command below
+\pgfdeclareimage[height=2cm]{titlepagelogo}{AAUgraphics/logo} % placed on the title page
+%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{AAUgraphics/aau_logo_new} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
+
+\begin{document}
+% the titlepage
+{\aauwavesbg
+\begin{frame}[plain,noframenumbering] % the plain option removes the sidebar and header from the title page
+  \titlepage
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+% TOC
+\begin{frame}{Agenda}{}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Análisis del problema.}
+% motivation for creating this theme
+\begin{frame}{Análisis del problema.}{}
+\begin{block}{¿En qué consiste el problema de recubrimiento de un grafo (por vértices)?}
+  Consideremos un grafo no dirigido $G = (V, E)$. Un conjunto $U \subseteq V$ se dice que es un recubrimiento de $G$ si cada arista en E incide en, al menos, un vértice o nodo de $U$. Es decir $\forall(x, y) \in E$, bien $x \in U$ o bien $ y \in U$. 
+  
+  Un conjunto de nodos es un recubrimiento minimal de $G$ si es un recubrimiento con el menor número posible de nodos. Se pide diseñar e implementar un algoritmo greedy que solucione este problema. Como salida, se deberá proporcionar el conjunto de nodos que forman el recubrimiento junto con el coste (número de nodos).
+\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-9.png}
+	\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\subsection{Diseño de la solución.}
+% the license
+\begin{frame}{Diseño de la solución.}{}
+\begin{description}
+	\item [Conjunto de candidatos a seleccionar:] El conjunto de vértices de los que se compone el problema
+	
+	\item [Conjunto de candidatos seleccionados:] Conjunto de vértices que forman el recubrimiento del grafo.
+	
+	\item [Función solución:] Todas las aristas están conectadas por al menos 2 vértices, es decir, no quedan aristas sueltas.
+	
+	\item [Función Factibilidad:] El problema siempre es factible, sean cuales sean los vértices seleccionados.
+	
+	\item [Función Selección:] Seleccionaremos el vértice que tenga mayor grado (al que lleguen más aristas).
+	
+	\item [Función Objetivo:] Que la suma de vértices del conjunto seleccionado sea la menor posible.
+\end{description}
+
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Esqueleto del algoritmo Greedy.}
+% general installation instructions
+\begin{frame}{Esqueleto del algoritmo Greedy.}
+  
+  Sea G un grafo y R el conjunto de vértices que forman la solución (inicialmente vacío)
+  
+  R = 0
+  
+  Sea un Grafo G = (V, A), y C el conjunto recubrimiento solución inicialmente vacío:
+  \pause
+  \begin{itemize}
+  \item Elegir en cada paso del algoritmo el vértice v $\in$ V de mayor grado.
+  \pause
+  \item Borrar el vértice v del grafo G
+  \pause
+  \item Marcar las aristas incidentes del vértice seleccionado como cubiertas y reducir el grado de los vértices que conectaban en uno.
+  \pause
+  \item Repetir este paso hasta que no queden aristas por cubrir.
+  \end{itemize}
+\end{frame}
+
+\section{Funcionamiento del algoritmo.}
+% list of the themes and options
+\begin{frame}{Funcionamiento del algoritmo.}{}
+  \begin{block}{Funcionamiento:}
+    Se comienza calculando los grados de los vértices. A continuación se va seleccionando el nodo con mayor grado y se eliminan los vértices que lo conectan, reduciendo en uno el grado de los vértices conectados al vértice seleccionado. Se repite hasta que no quedan aristas sin eliminar.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-0.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-1.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-2.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-3.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-4.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-5.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-6.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-7.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-8.png}
+	\end{block}
+\end{frame}
+\begin{frame}{Funcionamiento del algoritmo.}{}
+	\begin{block}{}
+		\includegraphics[width=0.85\textwidth]{gif-9.png}
+	\end{block}
+\end{frame}
+
+\section{Caso real de uso.}
+% known problems
+\begin{frame}{Caso real de uso.}{}  
+  \centering\includegraphics[width=0.6\textwidth]{inicial.jpg}
+  
+Un equipo de informáticos liderados por Eric Filiol en el `and Cryptology Lab, ESAT' utilizó recientemente algoritmos para obtener la cobertura por vértices de un grafo para simular la propagación de `gusanos' en grandes redes informáticass y disear estrategias para optimizar la protección de las redes contra ataques de estos virus en tiempo real.
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\begin{frame}{Caso real de uso}{}
+\centering\includegraphics[width=0.6\textwidth]{cover.jpg}
+
+Sea un grafo en el que los vértices son los servidores de ruta y las aristas las conexiones entre estos, los vértices que forman un recubrimiento minimal son aquellos de vitales para la seguridad de la red. Es decir, que resolviendo el problema de recubrimiento del grafo se puede saber qué servidores son más vulnerables  requieren mayor compromiso por parte de los encargados de la seguridad de la red.
+
+\end{frame}
+%%%%%%%%%%%%%%%%
+\section{Cálculo del orden de eficiencia teórico del algoritmo.}
+\begin{frame}{Cálculo del orden de eficiencia teórico del algoritmo.}{}  
+\includegraphics[width=0.9\textwidth]{eficienciaGreedy.pdf}
+
+En el peor de los casos se ejecutan n iteraciones de complejidad $O(n)$, luego la complejidad teórica del algoritmo es $O(n^2)$.
+\end{frame}
+
+
+
+\section{Instrucciones sobre cómo compilar y ejecutar el código}
+% known problems
+\begin{frame}{Formato}{}  
+	Hemos programado el algoritmo Greedy en un único archivo .cpp llamado recubrimiento.cpp que bastará con compilar con g++.
+	El programa recibe como parámetro el nombre del fichero que contiene los datos del problema con el formato:
+	\begin{itemize}
+		\item Una primera línea con el número de nodos, N.
+		\item N líneas con la matriz de adyacencia del grafo (en la posición i,j hay un 1 si los nodos son adyacentes o un 0 si no).
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Ejemplo de ejecución.}{}
+	Un ejemplo de ejecución y salida con el problema que hemos entregado como prueba (que es el nodo del ejemplo de la seguridad de servidores):
+	
+	
+	\includegraphics[width=\textwidth]{pantallazo.png}
+	
+	
+\end{frame}
+
+{\aauwavesbg%
+\begin{frame}[plain,noframenumbering]%
+  \finalpage{Gracias por escuchar!}
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+\end{document}

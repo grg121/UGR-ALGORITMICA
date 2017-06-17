@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{An\IeC {\'a}lisis del problema.}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Dise\IeC {\~n}o de la soluci\IeC {\'o}n.}{5}{0}{1}
+\beamer@sectionintoc {2}{Esqueleto del algoritmo Greedy.}{6}{0}{2}
+\beamer@sectionintoc {3}{Funcionamiento del algoritmo.}{11}{0}{3}
+\beamer@sectionintoc {4}{Caso real de uso.}{22}{0}{4}
+\beamer@sectionintoc {5}{C\IeC {\'a}lculo del orden de eficiencia te\IeC {\'o}rico del algoritmo.}{24}{0}{5}
+\beamer@sectionintoc {6}{Instrucciones sobre c\IeC {\'o}mo compilar y ejecutar el c\IeC {\'o}digo}{25}{0}{6}

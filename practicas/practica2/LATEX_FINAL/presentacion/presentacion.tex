@@ -1,0 +1,324 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+
+
+%%% Castellano.
+% noquoting: Permite uso de comillas no españolas.
+% lcroman: Permite la enumeración con numerales romanos en minúscula.
+% fontenc: Usa la fuente completa para que pueda copiarse correctamente del pdf.
+\usepackage[spanish,es-noquoting,es-lcroman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\selectlanguage{spanish}
+
+
+
+
+
+%%% Bibliografía
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+%% ENLACES 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true,    % Colours links instead of ugly boxes
+	urlcolor     = blue,    % Colour for external hyperlinks
+	linkcolor    = blue, %BurntOrange,    % Colour of internal links
+	citecolor    = blue      % Colour of citations
+}
+
+%% codigo
+
+%%% CÓDIGO
+\usepackage{listings}
+\usepackage{courier}
+\lstset{
+	basicstyle=\footnotesize\ttfamily, % Standardschrift
+	numbers=left,               % Ort der Zeilennummern
+	numberstyle=\tiny,          % Stil der Zeilennummern
+	stepnumber=2,               % Abstand zwischen den Zeilennummern
+	numbersep=5pt,              % Abstand der Nummern zum Text
+	tabsize=2,                  % Groesse von Tabs
+	extendedchars=true,         %
+	breaklines=true,            % Zeilen werden Umgebrochen
+	keywordstyle=\color{red},
+	frame=b,         
+	%        keywordstyle=[1]\textbf,    % Stil der Keywords
+	%        keywordstyle=[2]\textbf,    %
+	%        keywordstyle=[3]\textbf,    %
+	%        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+	stringstyle=\color{white}\ttfamily, % Farbe der String
+	showspaces=false,           % Leerzeichen anzeigen ?
+	showtabs=false,             % Tabs anzeigen ?
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	%backgroundcolor=\color{lightgray}
+	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+	literate=
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1   
+}
+
+
+\lstloadlanguages{% Check Dokumentation for further languages ...
+	%[Visual]Basic
+	%Pascal
+	%C
+	C++
+	%%XML
+	%%HTML
+	%Java
+}
+%\DeclareCaptionFont{blue}{\color{blue}} 
+
+%\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}
+}
+
+
+
+
+%% CREAR DIAGRAMAS 
+
+\usepackage{tikz}
+
+%% rodear figura de texto
+\usepackage{graphicx,wrapfig,lipsum}
+%% comentarios multilinea
+\usepackage{verbatim}
+
+\definecolor{darkGray}{gray}{0.05}
+
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+\title{Algoritmica, práctica 2}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Divide y vencerás.}
+
+
+\titlegraphic{	\includegraphics[width=0.2\textwidth]{cover.jpg}}
+\author{Grupo 4: Pablo Moreno Megías, Diego Lerena García, Manuel Vallejo Felipe, Ángel Díaz de la Torre, Francisco Navarro Morales, Marcel Kemp Muñoz y David Redondo Correa}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Universidad de Granada.] % (optional, but mostly needed)
+{
+	Segundo curso del Grado de Ingeniería Informática.\\
+		curso 2016-2017.
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+
+\subject{Algoritmica}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{cover.jpg}
+\logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>{Outline}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+
+% Let's get started
+\begin{document}
+	
+	
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}{Contenido}
+		\tableofcontents
+		% You might wish to add the option [pausesections]
+	\end{frame}
+
+
+\section{Problema}
+
+	
+\begin{frame}{Problema}
+		Dos productos i y j están "invertidos" en las preferencias de A y B si el usuario
+		A prefiere el producto i antes que el j mientras que el usuario B prefiere el
+		producto j antes que el i.
+		Esto es, cuantas menos inversiones existan entre dos rankings, más similares
+		serán las preferencias de los usuarios representados por esos rankings.
+		Por ello, el objetivo del problema sería realizar un algoritmo que compruebe el
+		número de inversiones que existen entre un vector ordenado, y otro desordenado, sabiendo
+		que sus datos van desde 0 hasta n-1 sin que ninguno se repita.
+\end{frame}
+
+\section{Algoritmo Obvio. Fuerza Bruta.}
+\subsection{Algoritmo}
+
+
+\begin{frame}{Algoritmo fuerza bruta}{explicación}
+El algoritmo de fuerza bruta comienza comparando la primera posición del vector que nos han dado con todas las demás posiciones del vector, comprobando si el número elegido (primera posición) es mayor que el número con el que se ha comparado. Si se cumpliese esta condición incrementaríamos una variable auxiliar para saber que está mal posicionado. Esta comparación hay que realizarla $n$ veces con todos los números que se encuentren dentro del vector (primer bucle), y además el número elegido debe de compararse con todos los demás números que aún no se hayan comprobado (segundo bucle). El problema de este algoritmo es que tiene una eficiencia muy mala, ya que daría $O(n^2)$, por culpa de los dos bucles anteriormente explicados.
+
+\end{frame}
+\begin{frame}{Algoritmo fuerza bruta}{código}
+	\lstinputlisting[language=C++,label=Algoritmo de fuerza bruta,caption=Algoritmo de fuerza bruta]{fuerza_bruta.cpp}
+\end{frame}
+\subsection{Eficiencia teórica.}
+
+\begin{frame}{algoritmo de fuerza bruta}{Eficiencia teórica}
+Tenemos dos bucles anidados, uno va desde 0 hasta el número de elementos y el otro (interior) va desde el índice del exterior más uno hasta el final, luego tenemos:
+
+$$\sum_{i=0}^{n}\sum_{i+1}^{n}1$$
+
+donde $\sum_{i+1}^{n}1=n-i$ y, al final tenemos, por tanto, $\sum_{i=0}^{n}\sum_{i+1}^{n}1 = \sum_{i=0}^{n}n-i$
+Luego tenemos:
+$$\sum_{i=0}^{n}n - \sum_{i=0}^{n}i  = n(n+1)-\frac{(n+1)n}{2}= \frac{(n+1)n}{2}=\frac{n^2+n}{2}$$
+
+Luego la eficiencia teórica del algoritmo de fuerza bruta es $O(n^2)$.
+\end{frame}
+\subsection{Eficiencia empírica.}
+
+\begin{frame}{algoritmo de fuerza bruta}{Eficiencia empírica}
+
+	\includegraphics[width=0.5\textwidth]{algoritmoMalo.png}
+\end{frame}
+\subsection{Eficiencia híbrida.}
+
+\begin{frame}{algoritmo de fuerza bruta}{Eficiencia híbrida}
+
+	\includegraphics[width=0.5\textwidth]{algoritmoMaloAjuste.png}
+\end{frame}
+\begin{frame}{Eficiencia híbrida}
+	\includegraphics[width=0.8\textwidth]{maloajuste}
+
+\section{Algoritmo Divide y Vencerás.}
+\end{frame}
+\subsection{Algoritmo}
+
+\begin{frame}{Algoritmo divide y vencerás}{algoritmo}
+\lstinputlisting[language=C++,label=Algoritmo `Divide y vencerás",caption=Algoritmo `Divide y vencerás"]{algoritmoBueno.cpp}
+La solución que hemos planteado se basa en suponer que, dado el elemento más a la izquierda del vector no ordenado, el número de inversiones que tienen que ver con este será igual al número de elementos que hay a la izquierda del elemento en el vector ordenado (que es igual a la posición que ocupa en este). Ahora bien, si eliminamos de ambos vectores(ordenado y desordenado) el número que estaba más a la izquierda en el desordenado, este razonamiento se puede repetir hasta que no queden números en el vector.
+
+En un principio este algoritmo nos pareció acertado y decidimos implementarlo. Sin embargo, durante el proceso pudimos comprobar que la idea tenía un fallo teórico en la base y al medir la eficiencia empírica vimos que no se correspondía con los resultados esperados.
+
+Como no hemos tenido tiempo de plantear otro algoritmo y repetir el proceso, hemos decidido analizar el error y comentarlo.
+\end{frame}
+\subsection{Eficiencia teórica.}
+
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia teórica}
+El algoritmo se basa en la función preferencias, que tiene $n$ iteraciones y en cada iteración llama a la función posición (que implementa una búsqueda binaria) que tiene una eficiencia $O(log(n))$ (aquí también se aplica el divide y vencerás). El problema del algoritmo es que necesita ir eliminando los elementos usados de los dos vectores que emplea y la eliminación en la estructura de datos $vector$ es $O(n)$ en lugar de $O(1)$ (que era lo que supusimos en un principio). También planteamos algunas alternativas para solucionar esto, como utilizar listas enlazadas (en las que la eliminación es $O(1)$), pero entonces no se podía implementar la búsqueda binaria y el tiempo de búsqueda pasaba a ser lineal(aún así la cosa mejoraría porque tendríamos una llamada $O(n)$ y una $O(1)$ en lugar de una $O(log(n))$ y otra $O(n)$ como es el caso, 
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia teórica}
+pero dado que la mejora no suponía superar al algoritmo que llamamos de fuerza bruta y que no hemos dispuesto de tiempo suficiente para repetir todo el proceso de desarrollo, hemos decidido dejarlo así. La mejor opción que se nos ocurrió fue implementar el algoritmo desde los dos extremos del vector (ya que la propiedad descrita es simétrica) y, haciendo la implementación con listas enlazadas, mantener un puntero a la mitad de la lista para hacer que la búsqueda fuera $\frac{n}{2}$. Así se mejoraría un poco el rendimiento pues se eliminarían los vectores de dos en dos y si estuvieran en la misma mitad del vector no habría que recorrerlo entero. Sin embargo, en el peor caso seguía siendo una búsqueda en $O(n)$ y el algoritmo seguía siendo igual o peor que el de fuerza bruta.
+\end{frame}
+\subsection{Eficiencia empírica.}
+
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia empírica}
+	\includegraphics[width=0.5\textwidth]{algBueno.png}
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia empírica II}
+Al medir los tiempos de forma empírica ya pudimos intuir que algo no funcionaba como esperábamos. La curva de ejecución se adivina cuadrática.
+\end{frame}
+\subsection{Eficiencia híbrida.}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia híbrida I}
+	\includegraphics[width=0.5\textwidth]{algBueno(log).png}
+
+Como es lógico, al intentar ajustar los tiempos a una función $nlogn$ los resultados obtenidos son evidentemente malos.
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia híbrida II}
+	\includegraphics[width=0.7\textwidth]{dyvajuste1.png}
+Como se puede apreciar en la figura \ref{AJuste1}, el error es bastante grande (127\% en el parámetro b), por eso probamos a ajustarla con una función cuadrática y los resultados fueron más próximos, como era de esperar, pues el algoritmo tenía un mal fundamento teórico.
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia híbrida III}
+	\includegraphics[width=0.5\textwidth]{algBueno(n2).png}
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{eficiencia híbrida IV}
+	\includegraphics[width=0.8\textwidth]{dyvajuste2.png}
+\end{frame}
+\begin{frame}{Algoritmo divide y vencerás}{conclusiones}
+En este caso los tiempos medidos sí que se ajustan a la función, dando evidencia de que el algoritmo genera tiempos igual o peores que los del algoritmo base que planteamos como "mala solución". Como se puede apreciar en las fotos de los ajustes, los índices de error ahora son mucho menores por lo que concluimos que la función tiene un tiempo cuadrático. Basta con deducir que si el tiempo de la eliminación es los vectores es lineal y el de la búsqueda logaritmico, por la regla de la suma prevalece la parte lineal de la eliminación y el algoritmo en cada iteración es lineal. Como se ejecuta en todos los elementos, tenemos $n\times n$ y aparece esa eficiencia cuadrática.
+\end{frame}
+\section{Comparación y conclusiones.}
+	
+\begin{frame}{Comparación y conclusiones.}
+		La comparación es obvia, la idea que hemos propuesto es incluso peor que la inicial (no las hemos comparado gráficamente porque la diferencia es irrelevante, la conclusión es que la solución propuesta es totalmente desechable).
+		
+		De esta practica hemos aprendido que hay que darle más importancia al análisis teórico de los algoritmos antes de molestarse en implementarlos y mucho menos en realizar mediciones, solucionar errores y demás.
+
+\end{frame}
+
+
+
+\end{document}
+
+

@@ -1,0 +1,9 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {section}{\numberline {1}An\IeC {\'a}lisis del problema.}{1}{section.1}
+\contentsline {section}{\numberline {2}Dise\IeC {\~n}o de la soluci\IeC {\'o}n.}{1}{section.2}
+\contentsline {section}{\numberline {3}Esqueleto del algoritmo Greedy.}{1}{section.3}
+\contentsline {section}{\numberline {4}Funcionamiento del algoritmo.}{2}{section.4}
+\contentsline {section}{\numberline {5}Ejemplo real de uso.}{4}{section.5}
+\contentsline {section}{\numberline {6}C\IeC {\'a}lculo del orden de eficiencia te\IeC {\'o}rico del algoritmo.}{6}{section.6}
+\contentsline {section}{\numberline {7}Instrucciones sobre c\IeC {\'o}mo compilar y ejecutar el c\IeC {\'o}digo}{7}{section.7}

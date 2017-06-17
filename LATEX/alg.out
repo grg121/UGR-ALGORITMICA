@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Planteamiento general.}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Problemas P y NP}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Algor\355tmica}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{La eficiencia de los algoritmos}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Medidas de la eficiencia}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Ejemplos:}{subsection.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Calculando O grande de un algoritmo.}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Ejercicio1: Demuestre las siguientes afirmaciones. \277Qu\351 quieren decir?}{subsection.2.2}% 8
+\BOOKMARK [1][-]{section.3}{Calculo de eficiencia de funciones recursivas}{}% 9

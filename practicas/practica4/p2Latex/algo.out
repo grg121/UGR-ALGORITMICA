@@ -1,0 +1,8 @@
+\BOOKMARK [1][-]{section.1}{An\341lisis del problema}{}% 1
+\BOOKMARK [1][-]{section.2}{Escoger una t\351cnica \(BackTracking o Branch and Bound\) y justificar su elecci\363n frente a la otra metodolog\355a no seleccionada.}{}% 2
+\BOOKMARK [1][-]{section.3}{Dise\361o de la soluci\363n, describiendo cada una de las componentes de la misma relacion\341ndola con las componentes de un algoritmo BackTracking o Branch\046Bound, seg\372n la t\351cnica escogida.}{}% 3
+\BOOKMARK [1][-]{section.4}{Esqueleto del algoritmo \(pseudoc\363digo\) que soluciona el problema, explicando c\363mo se ha incorporado cada una de las componentes de dise\361o de la t\351cnica \(BackTracking o Branch\046Bound, seg\372n se aplique\)}{}% 4
+\BOOKMARK [1][-]{section.5}{Explicaci\363n del funcionamiento del algoritmo, sobre un caso de ejemplo peque\361o propuesto por los estudiantes.}{}% 5
+\BOOKMARK [1][-]{section.6}{Enunciado de un problema o caso real donde se pueda utilizar la t\351cnica seleccionada para solucionarlo \(distinto de los comentados en clase\).}{}% 6
+\BOOKMARK [1][-]{section.7}{C\341lculo del orden de eficiencia te\363rico del algoritmo.}{}% 7
+\BOOKMARK [1][-]{section.8}{8. Instrucciones sobre c\363mo compilar y ejecutar el c\363digo de la pr\341ctica.}{}% 8

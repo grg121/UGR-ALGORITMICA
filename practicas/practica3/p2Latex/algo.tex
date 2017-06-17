@@ -1,0 +1,344 @@
+%%%
+% Plantilla de Memoria
+% Modificación de una plantilla de Latex de Nicolas Diaz para adaptarla 
+% al castellano y a las necesidades de escribir informática y matemáticas.
+%
+% Editada por: Mario Román
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PAQUETES Y CONFIGURACIÓN DEL DOCUMENTO
+%----------------------------------------------------------------------------------------
+%%% Configuración del papel.
+% microtype: Tipografía.
+% mathpazo: Usa la fuente Palatino.
+\documentclass[a4paper, 11pt]{article}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{mathpazo}
+
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+	%
+	frame=lines,  % top and bottom rule only
+	framesep=2em, % separation between frame and text
+	rulecolor=\color{Gray},
+	%
+	label=\fbox{\color{Black}data.txt},
+	labelposition=topline,
+	%
+	commandchars=\|\(\), % escape character and argument delimiters for
+	% commands within the verbatim
+	commentchar=*        % comment character
+}
+
+
+\usepackage{movie15}
+
+
+% Indentación de párrafos para Palatino
+\setlength{\parindent}{0pt}
+  \parskip=8pt
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+
+
+
+%%% Castellano.
+% noquoting: Permite uso de comillas no españolas.
+% lcroman: Permite la enumeración con numerales romanos en minúscula.
+% fontenc: Usa la fuente completa para que pueda copiarse correctamente del pdf.
+\usepackage[spanish,es-noquoting,es-lcroman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\selectlanguage{spanish}
+
+
+
+
+%%% Gráficos
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage[usenames,dvipsnames]{color} % Coloring code
+\usepackage{graphicx}
+
+%%% Matemáticas
+\usepackage{amsmath}
+
+
+%%% Bibliografía
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+
+%% codigo
+
+%%% CÓDIGO
+ \usepackage{listings}
+\usepackage{courier}
+\lstset{
+	basicstyle=\footnotesize\ttfamily, % Standardschrift
+	numbers=left,               % Ort der Zeilennummern
+	numberstyle=\tiny,          % Stil der Zeilennummern
+	stepnumber=1,               % Abstand zwischen den Zeilennummern
+	numbersep=5pt,              % Abstand der Nummern zum Text
+	tabsize=2,                  % Groesse von Tabs
+	extendedchars=true,         %
+	breaklines=true,            % Zeilen werden Umgebrochen
+	keywordstyle=\color{red},
+	frame=b,         
+	%        keywordstyle=[1]\textbf,    % Stil der Keywords
+	%        keywordstyle=[2]\textbf,    %
+	%        keywordstyle=[3]\textbf,    %
+	%        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+	stringstyle=\color{white}\ttfamily, % Farbe der String
+	showspaces=false,           % Leerzeichen anzeigen ?
+	showtabs=false,             % Tabs anzeigen ?
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	%backgroundcolor=\color{lightgray}
+	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+	literate=
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1   
+}
+
+
+\lstloadlanguages{% Check Dokumentation for further languages ...
+%[Visual]Basic
+%Pascal
+%C
+C++
+%%XML
+%%HTML
+%Java
+}
+%\DeclareCaptionFont{blue}{\color{blue}} 
+
+%\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}
+}
+
+%% cosas 
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{times}
+
+
+%% colorear titulos
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{rojizo}\normalfont\Large\bfseries}
+{\color{Black}\thesection}{1em}{}
+
+
+%% ENLACES 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true,    % Colours links instead of ugly boxes
+	urlcolor     = black,    % Colour for external hyperlinks
+	linkcolor    = black, %BurntOrange,    % Colour of internal links
+	citecolor    = black      % Colour of citations
+}
+
+
+%% CREAR DIAGRAMAS 
+
+\usepackage{tikz}
+
+%% rodear figura de texto
+\usepackage{graphicx,wrapfig,lipsum}
+ %% comentarios multilinea
+\usepackage{verbatim}
+
+\definecolor{darkGray}{gray}{0.05}
+\usepackage{animate}
+\definecolor{rojizo}{RGB}{217, 83, 79}
+
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+	
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{0.2cm}
+			
+			{\Huge \textbf{\textcolor{rojizo}{Recubrimiento de un grafo por vértices (Vertex Cover)}}}
+			
+						{\textcolor{black}	{\Huge\underline{practica 3: algoritmos greedy}}}
+			
+				\vspace{0.2cm}
+				
+				\includegraphics[width=\textwidth]{cover.jpg}
+				\vspace{0.2cm}
+				
+
+		
+			\vspace{1cm}
+			
+			\textbf{AUTORES: \\
+					Pablo Moreno Megías, Diego Lerena García, Manuel Vallejo Felipe, Ángel Díaz de la Torre, Francisco Navarro Morales, Marcel Kemp Muñoz y David Redondo Correa
+		    		 }
+	    		 \vspace{1cm}
+	   
+			
+			\vfill
+			Algorítmica [PRACTICAS]\\
+			Segundo curso del Grado de Ingeniería Informática.\\
+			Universidad de Granada.\\
+			curso 2016-2017.
+		\end{center}
+	\end{titlepage}
+
+
+%\maketitle % Print the title section
+
+%% Resumen (Descomentar para usarlo)
+\renewcommand{\abstractname}{Resumen} % Uncomment to change the name of the abstract to something else
+%\begin{abstract}
+% Resumen aquí
+%\end{abstract}
+
+%% Palabras clave
+%\hspace*{3,6mm}\textit{Keywords:} lorem , ipsum , dolor , sit amet , lectus % Keywords
+%\vspace{30pt} % Some vertical space between the abstract and first section
+
+\color{darkGray}
+%% Índice
+{\parskip=2pt
+  \tableofcontents
+}
+
+\section{Análisis del problema.}
+ Consideremos un grafo no dirigido $G = (V, E)$. Un conjunto $U \subseteq V$ se dice que es un recubrimiento de $G$ si cada arista en E incide en, al menos, un vértice o nodo de $U$. Es decir $\forall(x, y) \in E$, bien $x \in U$ o bien $ y \in U$. 
+
+Un conjunto de nodos es un recubrimiento minimal de $G$ si es un recubrimiento con el menor número posible de nodos. Se pide diseñar e implementar un algoritmo greedy que solucione este problema. Como salida, se deberá proporcionar el conjunto de nodos que forman el recubrimiento junto con el coste (número de nodos).
+
+\section{Diseño de la solución.}
+
+\begin{description}
+\item [Conjunto de candidatos a seleccionar:] El conjunto de vértices de los que se compone el problema
+
+\item [Conjunto de candidatos seleccionados:] Conjunto de vértices que forman el recubrimiento del grafo.
+
+\item [Función solución:] Todas las aristas están conectadas por al menos 2 vértices, es decir, no quedan aristas sueltas.
+
+\item [Función Factibilidad:] El problema siempre es factible, sean cuales sean los vértices seleccionados.
+
+\item [Función Selección:] Seleccionaremos el vértice que tenga mayor grado (al que lleguen más aristas).
+
+\item [Función Objetivo:] Que la suma de vértices del conjunto seleccionado sea la menor posible.
+\end{description}
+
+\section{Esqueleto del algoritmo Greedy.}
+
+Sea G un grafo y R el conjunto de vértices que forman la solución (inicialmente vacío)
+
+R = 0
+
+Sea un Grafo G = (V, A), y C el conjunto recubrimiento solución inicialmente vacío:
+
+Elegir en cada paso del algoritmo el vértice v $\in$ V de mayor grado.
+Añadir el vértice v al conjunto solución C.
+Borrar el vértice v del grafo G
+Marcar las aristas incidentes del vértice seleccionado como cubiertas y reducir el grado de los vértices que conectaban en uno.
+Repetir este paso hasta que no queden aristas por cubrir.
+
+\section{Funcionamiento del algoritmo.}
+Se comienza calculando los grados de los vértices. A continuación se va seleccionando el nodo con mayor grado y se eliminan los vértices que lo conectan, reduciendo en uno el grado de los vértices conectados al vértice seleccionado. Se repite hasta que no quedan aristas sin eliminar.
+
+\includegraphics[width=0.5\textwidth]{gif-0.png}
+\includegraphics[width=0.5\textwidth]{gif-1.png}
+
+\includegraphics[width=0.5\textwidth]{gif-2.png}
+\includegraphics[width=0.5\textwidth]{gif-3.png}
+
+\includegraphics[width=0.5\textwidth]{gif-4.png}
+\includegraphics[width=0.5\textwidth]{gif-5.png}
+
+\includegraphics[width=0.5\textwidth]{gif-6.png}
+\includegraphics[width=0.5\textwidth]{gif-7.png}
+
+\includegraphics[width=0.5\textwidth]{gif-8.png}
+\includegraphics[width=0.5\textwidth]{gif-9.png}
+
+\pagebreak
+
+\section{Ejemplo real de uso.}
+Un equipo de informáticos liderados por Eric Filiol en el `and Cryptology Lab, ESAT' utilizó recientemente algoritmos para obtener la cobertura por vértices de un grafo para simular la propagación de `gusanos' en grandes redes informáticas y diseñar estrategias para optimizar la protección de las redes contra ataques de estos virus en tiempo real.
+
+\centering\includegraphics[width=0.6\textwidth]{inicial.jpg}
+
+La simulación se realizó en una gran red virtual y se descubrió que la distribución de los servidores tenía un gran impacto en la propagación de gusanos y que algunos servidores tenía una importancia mucho más relevante que otros. Así, la necesidad de encontrar en tiempo real qué servidores son más importantes para la seguridad de la red se hizo patente. Se descubrió que, viendo el problema como un grafo en le que los vértices son los servidores de ruta y las aristas las (posiblemente dinámicas) conexiones entre estos, los vértices que forman un recubrimiento minimal son aquellos de vital importancia para la seguridad de la red. Es decir, que resolviendo en cada momento el problema de recubrimiento del grafo dado por el estado de servidores y conexiones entre ellos se puede saber qué servidores son más vulnerables  requieren mayor compromiso por parte de los encargados de la seguridad de la red.
+
+\centering\includegraphics[width=0.6\textwidth]{cover.jpg}
+
+
+La base del algoritmo son los métodos de selección (que consiste en calcular el máximo de los grados de los nodos en $O(n)$) y el de añadir un nodo a la solución (que además conlleva reducir los grados de los vértices adyacentes a este y se hace en $O(n)$).
+En el peor de los casos el bucle while tendría $n$ iteraciones de complejidad $n$, luego la eficiencia del algoritmo es $O(n^2)$.
+
+\section{Cálculo del orden de eficiencia teórico del algoritmo.}
+\includegraphics[width=1.2\textwidth]{eficienciaGreedy.pdf}
+
+\section{Instrucciones sobre cómo compilar y ejecutar el código}
+
+Hemos programado el algoritmo Greedy en un único archivo .cpp llamado recubrimiento.cpp que bastará con compilar con g++.
+El programa recibe como parámetro el nombre del fichero que contiene los datos del problema con el formato:
+\begin{itemize}
+	\item Una primera línea con el número de nodos, N.
+	\item N líneas con la matriz de adyacencia del grafo (en la posición i,j hay un 1 si los nodos son adyacentes o un 0 si no).
+\end{itemize}
+
+Un ejemplo de ejecución y salida con el problema que hemos entregado como prueba (que es el nodo del ejemplo de la seguridad de servidores):
+
+
+\includegraphics[width=\textwidth]{pantallazo.png}
+
+
+
+
+\end{document}

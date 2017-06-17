@@ -1,0 +1,101 @@
+tamaño	tiempo	algoritmo	pc	optimización
+
+200	0.006108045578	quicksort	MacOSx	Ordenado
+
+400	0.00677895545959	quicksort	MacOSx	Ordenado
+
+600	0.013072013855	quicksort	MacOSx	Ordenado
+
+800	0.0116879940033	quicksort	MacOSx	Ordenado
+
+1000	0.0118119716644	quicksort	MacOSx	Ordenado
+
+1200	0.00979900360107	quicksort	MacOSx	Ordenado
+
+1400	0.0120320320129	quicksort	MacOSx	Ordenado
+
+1600	0.0148239135742	quicksort	MacOSx	Ordenado
+
+1800	0.0139741897583	quicksort	MacOSx	Ordenado
+
+2000	0.013934135437	quicksort	MacOSx	Ordenado
+
+2200	0.0143480300903	quicksort	MacOSx	Ordenado
+
+2400	0.0150551795959	quicksort	MacOSx	Ordenado
+
+2600	0.016144990921	quicksort	MacOSx	Ordenado
+
+2800	0.0174939632416	quicksort	MacOSx	Ordenado
+
+3000	0.0168719291687	quicksort	MacOSx	Ordenado
+
+3200	0.0201990604401	quicksort	MacOSx	Ordenado
+
+3400	0.0216550827026	quicksort	MacOSx	Ordenado
+
+3600	0.0221428871155	quicksort	MacOSx	Ordenado
+
+3800	0.0237619876862	quicksort	MacOSx	Ordenado
+
+4000	0.0258140563965	quicksort	MacOSx	Ordenado
+
+4200	0.0310869216919	quicksort	MacOSx	Ordenado
+
+4400	0.0334041118622	quicksort	MacOSx	Ordenado
+
+4600	0.0311279296875	quicksort	MacOSx	Ordenado
+
+4800	0.0352728366852	quicksort	MacOSx	Ordenado
+
+5000	0.0357539653778	quicksort	MacOSx	Ordenado
+
+5200	0.0425891876221	quicksort	MacOSx	Ordenado
+
+5400	0.0458881855011	quicksort	MacOSx	Ordenado
+
+5600	0.0447399616241	quicksort	MacOSx	Ordenado
+
+5800	0.0529358386993	quicksort	MacOSx	Ordenado
+
+6000	0.0565640926361	quicksort	MacOSx	Ordenado
+
+6200	0.058543920517	quicksort	MacOSx	Ordenado
+
+6400	0.0621330738068	quicksort	MacOSx	Ordenado
+
+6600	0.0620210170746	quicksort	MacOSx	Ordenado
+
+6800	0.0624930858612	quicksort	MacOSx	Ordenado
+
+7000	0.0670828819275	quicksort	MacOSx	Ordenado
+
+7200	0.0701560974121	quicksort	MacOSx	Ordenado
+
+7400	0.0758981704712	quicksort	MacOSx	Ordenado
+
+7600	0.0819420814514	quicksort	MacOSx	Ordenado
+
+7800	0.0818469524384	quicksort	MacOSx	Ordenado
+
+8000	0.0851788520813	quicksort	MacOSx	Ordenado
+
+8200	0.0890920162201	quicksort	MacOSx	Ordenado
+
+8400	0.0934751033783	quicksort	MacOSx	Ordenado
+
+8600	0.0980138778687	quicksort	MacOSx	Ordenado
+
+8800	0.100058078766	quicksort	MacOSx	Ordenado
+
+9000	0.105905056	quicksort	MacOSx	Ordenado
+
+9200	0.113597154617	quicksort	MacOSx	Ordenado
+
+9400	0.111710071564	quicksort	MacOSx	Ordenado
+
+9600	0.117810964584	quicksort	MacOSx	Ordenado
+
+9800	0.125593900681	quicksort	MacOSx	Ordenado
+
+10000	0.126414060593	quicksort	MacOSx	Ordenado

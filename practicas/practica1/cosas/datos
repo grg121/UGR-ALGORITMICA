@@ -1,0 +1,301 @@
+tamaño	tiempo	algoritmo	pc	optimización
+
+200	0.00319555044174	heapsort	toshiba_marcel	2
+
+400	0.00335548877716	heapsort	toshiba_marcel	2
+
+600	0.00345514059067	heapsort	toshiba_marcel	2
+
+800	0.00336249828339	heapsort	toshiba_marcel	2
+
+1000	0.00321976900101	heapsort	toshiba_marcel	2
+
+1200	0.00343673944473	heapsort	toshiba_marcel	2
+
+1400	0.00351489067078	heapsort	toshiba_marcel	2
+
+1600	0.0035847401619	heapsort	toshiba_marcel	2
+
+1800	0.00365335941315	heapsort	toshiba_marcel	2
+
+2000	0.00357595920563	heapsort	toshiba_marcel	2
+
+2200	0.00349829912186	heapsort	toshiba_marcel	2
+
+2400	0.00367141008377	heapsort	toshiba_marcel	2
+
+2600	0.00382791042328	heapsort	toshiba_marcel	2
+
+2800	0.00386935949326	heapsort	toshiba_marcel	2
+
+3000	0.00383838176727	heapsort	toshiba_marcel	2
+
+3200	0.00378278970718	heapsort	toshiba_marcel	2
+
+3400	0.00375519037247	heapsort	toshiba_marcel	2
+
+3600	0.00406034946442	heapsort	toshiba_marcel	2
+
+3800	0.00404174089432	heapsort	toshiba_marcel	2
+
+4000	0.00395467042923	heapsort	toshiba_marcel	2
+
+4200	0.00413768053055	heapsort	toshiba_marcel	2
+
+4400	0.00407309055328	heapsort	toshiba_marcel	2
+
+4600	0.00395926952362	heapsort	toshiba_marcel	2
+
+4800	0.0041841006279	heapsort	toshiba_marcel	2
+
+5000	0.00409993886948	heapsort	toshiba_marcel	2
+
+5200	0.004364798069	heapsort	toshiba_marcel	2
+
+5400	0.00430423974991	heapsort	toshiba_marcel	2
+
+5600	0.00455767869949	heapsort	toshiba_marcel	2
+
+5800	0.0046072101593	heapsort	toshiba_marcel	2
+
+6000	0.00450935125351	heapsort	toshiba_marcel	2
+
+6200	0.00420434951782	heapsort	toshiba_marcel	2
+
+6400	0.0044642496109	heapsort	toshiba_marcel	2
+
+6600	0.00448349952698	heapsort	toshiba_marcel	2
+
+6800	0.00440348148346	heapsort	toshiba_marcel	2
+
+7000	0.00441354036331	heapsort	toshiba_marcel	2
+
+7200	0.00458560943604	heapsort	toshiba_marcel	2
+
+7400	0.00456762075424	heapsort	toshiba_marcel	2
+
+7600	0.00480202913284	heapsort	toshiba_marcel	2
+
+7800	0.00444237947464	heapsort	toshiba_marcel	2
+
+8000	0.00503334999084	heapsort	toshiba_marcel	2
+
+8200	0.00471573114395	heapsort	toshiba_marcel	2
+
+8400	0.00448824167252	heapsort	toshiba_marcel	2
+
+8600	0.0050350689888	heapsort	toshiba_marcel	2
+
+8800	0.00495131015778	heapsort	toshiba_marcel	2
+
+9000	0.00493479013443	heapsort	toshiba_marcel	2
+
+9200	0.00481437206268	heapsort	toshiba_marcel	2
+
+9400	0.00486366033554	heapsort	toshiba_marcel	2
+
+9600	0.005237159729	heapsort	toshiba_marcel	2
+
+9800	0.00521461009979	heapsort	toshiba_marcel	2
+
+10000	0.00520783185959	heapsort	toshiba_marcel	2
+
+200	0.00361752986907959	heapsort	msi_paco	2
+
+400	0.0037682342529296877	heapsort	msi_paco	2
+
+600	0.003698601722717285	heapsort	msi_paco	2
+
+800	0.0038250732421875	heapsort	msi_paco	2
+
+1000	0.00377457857131958	heapsort	msi_paco	2
+
+1200	0.003750019073486328	heapsort	msi_paco	2
+
+1400	0.003894069194793701	heapsort	msi_paco	2
+
+1600	0.0037427043914794924	heapsort	msi_paco	2
+
+1800	0.003798344135284424	heapsort	msi_paco	2
+
+2000	0.0038233542442321776	heapsort	msi_paco	2
+
+2200	0.003967230319976807	heapsort	msi_paco	2
+
+2400	0.0038665032386779787	heapsort	msi_paco	2
+
+2600	0.004033446311950684	heapsort	msi_paco	2
+
+2800	0.0041063928604125974	heapsort	msi_paco	2
+
+3000	0.004675168991088868	heapsort	msi_paco	2
+
+3200	0.004783236980438232	heapsort	msi_paco	2
+
+3400	0.004270410537719727	heapsort	msi_paco	2
+
+3600	0.0041805005073547365	heapsort	msi_paco	2
+
+3800	0.004375045299530029	heapsort	msi_paco	2
+
+4000	0.004152092933654785	heapsort	msi_paco	2
+
+4200	0.004412930011749267	heapsort	msi_paco	2
+
+4400	0.00431971549987793	heapsort	msi_paco	2
+
+4600	0.004481353759765625	heapsort	msi_paco	2
+
+4800	0.004636452198028564	heapsort	msi_paco	2
+
+5000	0.004292235374450683	heapsort	msi_paco	2
+
+5200	0.004652099609375	heapsort	msi_paco	2
+
+5400	0.004397425651550293	heapsort	msi_paco	2
+
+5600	0.004530086517333985	heapsort	msi_paco	2
+
+5800	0.005045909881591797	heapsort	msi_paco	2
+
+6000	0.004334702491760254	heapsort	msi_paco	2
+
+6200	0.0042440533638000485	heapsort	msi_paco	2
+
+6400	0.0046156072616577145	heapsort	msi_paco	2
+
+6600	0.004212918281555175	heapsort	msi_paco	2
+
+6800	0.004309952259063721	heapsort	msi_paco	2
+
+7000	0.00425565242767334	heapsort	msi_paco	2
+
+7200	0.004375467300415039	heapsort	msi_paco	2
+
+7400	0.004402847290039063	heapsort	msi_paco	2
+
+7600	0.004557540416717529	heapsort	msi_paco	2
+
+7800	0.004575445652008057	heapsort	msi_paco	2
+
+8000	0.005408697128295899	heapsort	msi_paco	2
+
+8200	0.004429681301116943	heapsort	msi_paco	2
+
+8400	0.004695084095001221	heapsort	msi_paco	2
+
+8600	0.004644167423248291	heapsort	msi_paco	2
+
+8800	0.004524006843566895	heapsort	msi_paco	2
+
+9000	0.004546217918395996	heapsort	msi_paco	2
+
+9200	0.004469032287597656	heapsort	msi_paco	2
+
+9400	0.004360184669494629	heapsort	msi_paco	2
+
+9600	0.004637064933776855	heapsort	msi_paco	2
+
+9800	0.004768049716949463	heapsort	msi_paco	2
+
+10000	0.004891469478607178	heapsort	msi_paco	2
+
+200	0.00153164148331	heapsort	angel	2
+
+400	0.00135545015335	heapsort	angel	2
+
+600	0.00152218818665	heapsort	angel	2
+
+800	0.00148864030838	heapsort	angel	2
+
+1000	0.00152791023254	heapsort	angel	2
+
+1200	0.00155043125153	heapsort	angel	2
+
+1400	0.001578540802	heapsort	angel	2
+
+1600	0.00157836914062	heapsort	angel	2
+
+1800	0.0016459107399	heapsort	angel	2
+
+2000	0.00168114185333	heapsort	angel	2
+
+2200	0.00165904045105	heapsort	angel	2
+
+2400	0.00173448085785	heapsort	angel	2
+
+2600	0.0017649102211	heapsort	angel	2
+
+2800	0.0017896604538	heapsort	angel	2
+
+3000	0.00185164928436	heapsort	angel	2
+
+3200	0.00185610055923	heapsort	angel	2
+
+3400	0.00188377857208	heapsort	angel	2
+
+3600	0.00197339057922	heapsort	angel	2
+
+3800	0.0019421005249	heapsort	angel	2
+
+4000	0.00201758861542	heapsort	angel	2
+
+4200	0.00206199884415	heapsort	angel	2
+
+4400	0.00206490039825	heapsort	angel	2
+
+4600	0.0021390414238	heapsort	angel	2
+
+4800	0.00214869976044	heapsort	angel	2
+
+5000	0.00215949058533	heapsort	angel	2
+
+5200	0.00226336956024	heapsort	angel	2
+
+5400	0.00226606845856	heapsort	angel	2
+
+5600	0.00230832099915	heapsort	angel	2
+
+5800	0.00234198093414	heapsort	angel	2
+
+6000	0.00237264871597	heapsort	angel	2
+
+6200	0.00239627122879	heapsort	angel	2
+
+6400	0.00241898775101	heapsort	angel	2
+
+6600	0.0024658203125	heapsort	angel	2
+
+6800	0.00248559951782	heapsort	angel	2
+
+7000	0.00251410007477	heapsort	angel	2
+
+7200	0.00258609056473	heapsort	angel	2
+
+7400	0.00257659196854	heapsort	angel	2
+
+7600	0.00263966083527	heapsort	angel	2
+
+7800	0.00273729085922	heapsort	angel	2
+
+8000	0.00271445035934	heapsort	angel	2
+
+8200	0.00275285005569	heapsort	angel	2
+
+8400	0.00276915788651	heapsort	angel	2
+
+8600	0.00291785001755	heapsort	angel	2
+
+8800	0.00286796092987	heapsort	angel	2
+
+9000	0.00292973041534	heapsort	angel	2
+
+9200	0.00296550989151	heapsort	angel	2
+
+9400	0.00302391052246	heapsort	angel	2
+
+9600	0.00301687955856	heapsort	angel	2
+
+9800	0.00303125858307	heapsort	angel	2
+
+10000	0.0030756688118	heapsort	angel	2

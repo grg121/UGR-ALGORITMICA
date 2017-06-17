@@ -1,0 +1,11 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Planteamiento general.}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Problemas P y NP}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Algor\IeC {\'\i }tmica}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}La eficiencia de los algoritmos}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Medidas de la eficiencia}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Ejemplos:}{5}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Calculando O grande de un algoritmo.}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Ejercicio1: Demuestre las siguientes afirmaciones. \IeC {\textquestiondown }Qu\IeC {\'e} quieren decir?}{6}{subsubsection.2.2.1}
+\contentsline {section}{\numberline {3}Calculo de eficiencia de funciones recursivas}{6}{section.3}

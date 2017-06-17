@@ -1,0 +1,341 @@
+%%%
+% Plantilla de Memoria
+% Modificación de una plantilla de Latex de Nicolas Diaz para adaptarla 
+% al castellano y a las necesidades de escribir informática y matemáticas.
+%
+% Editada por: Mario Román
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PAQUETES Y CONFIGURACIÓN DEL DOCUMENTO
+%----------------------------------------------------------------------------------------
+%%% Configuración del papel.
+% microtype: Tipografía.
+% mathpazo: Usa la fuente Palatino.
+\documentclass[a4paper, 11pt]{article}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{mathpazo}
+
+\usepackage{fancyvrb}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+	%
+	frame=lines,  % top and bottom rule only
+	framesep=2em, % separation between frame and text
+	rulecolor=\color{Gray},
+	%
+	label=\fbox{\color{Black}data.txt},
+	labelposition=topline,
+	%
+	commandchars=\|\(\), % escape character and argument delimiters for
+	% commands within the verbatim
+	commentchar=*        % comment character
+}
+
+
+
+% Indentación de párrafos para Palatino
+\setlength{\parindent}{0pt}
+  \parskip=8pt
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+
+
+
+%%% Castellano.
+% noquoting: Permite uso de comillas no españolas.
+% lcroman: Permite la enumeración con numerales romanos en minúscula.
+% fontenc: Usa la fuente completa para que pueda copiarse correctamente del pdf.
+\usepackage[spanish,es-noquoting,es-lcroman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\selectlanguage{spanish}
+
+
+
+
+%%% Gráficos
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage[usenames,dvipsnames]{color} % Coloring code
+
+%%% Matemáticas
+\usepackage{amsmath}
+
+
+%%% Bibliografía
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+%% ENLACES 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true,    % Colours links instead of ugly boxes
+	urlcolor     = MidnightBlue,    % Colour for external hyperlinks
+	linkcolor    = MidnightBlue, %BurntOrange,    % Colour of internal links
+	citecolor    = MidnightBlue      % Colour of citations
+}
+
+%% codigo
+
+%%% CÓDIGO
+ \usepackage{listings}
+\usepackage{courier}
+\lstset{
+	basicstyle=\footnotesize\ttfamily, % Standardschrift
+	numbers=left,               % Ort der Zeilennummern
+	numberstyle=\tiny,          % Stil der Zeilennummern
+	stepnumber=1,               % Abstand zwischen den Zeilennummern
+	numbersep=5pt,              % Abstand der Nummern zum Text
+	tabsize=2,                  % Groesse von Tabs
+	extendedchars=true,         %
+	breaklines=true,            % Zeilen werden Umgebrochen
+	keywordstyle=\color{red},
+	frame=b,         
+	%        keywordstyle=[1]\textbf,    % Stil der Keywords
+	%        keywordstyle=[2]\textbf,    %
+	%        keywordstyle=[3]\textbf,    %
+	%        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+	stringstyle=\color{white}\ttfamily, % Farbe der String
+	showspaces=false,           % Leerzeichen anzeigen ?
+	showtabs=false,             % Tabs anzeigen ?
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	%backgroundcolor=\color{lightgray}
+	showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+	literate=
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1   
+}
+
+
+\lstloadlanguages{% Check Dokumentation for further languages ...
+%[Visual]Basic
+%Pascal
+%C
+C++
+%%XML
+%%HTML
+%Java
+}
+%\DeclareCaptionFont{blue}{\color{blue}} 
+
+%\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}
+}
+
+%% cosas 
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{times}
+
+
+%% colorear titulos
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{MidnightBlue}\normalfont\Large\bfseries}
+{\color{Black}\thesection}{1em}{}
+
+
+%% CREAR DIAGRAMAS 
+
+\usepackage{tikz}
+
+%% rodear figura de texto
+\usepackage{graphicx,wrapfig,lipsum}
+ %% comentarios multilinea
+\usepackage{verbatim}
+
+\definecolor{darkGray}{gray}{0.05}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	
+	
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{0.2cm}
+			
+			{\Huge \textbf{\textcolor{red}{ALGORÍTMICA}}}
+			
+						{\textcolor[rgb]{0.13,0.09,0.08}	{\Huge\underline{PRÁCTICA 2: DIVIDE Y VENCERÁS}}}
+			
+				\vspace{0.2cm}
+				
+				\includegraphics[width=\textwidth]{cover.jpg}
+				\vspace{0.2cm}
+				
+
+		
+			\vspace{1cm}
+			
+			\textbf{AUTORES: \\
+					Pablo Moreno Megías, Diego Lerena García, Manuel Vallejo Felipe, Ángel Díaz de la Torre, Francisco Navarro Morales, Marcel Kemp Muñoz y David Redondo Correa
+		    		 }
+	    		 \vspace{1cm}
+	   
+			
+			\vfill
+			Algorítmica [PRACTICAS]\\
+			Segundo curso del Grado de Ingeniería Informática.\\
+			Universidad de Granada.\\
+			curso 2016-2017.
+		\end{center}
+	\end{titlepage}
+
+
+%\maketitle % Print the title section
+
+%% Resumen (Descomentar para usarlo)
+\renewcommand{\abstractname}{Resumen} % Uncomment to change the name of the abstract to something else
+%\begin{abstract}
+% Resumen aquí
+%\end{abstract}
+
+%% Palabras clave
+%\hspace*{3,6mm}\textit{Keywords:} lorem , ipsum , dolor , sit amet , lectus % Keywords
+%\vspace{30pt} % Some vertical space between the abstract and first section
+
+\color{darkGray}
+%% Índice
+{\parskip=2pt
+  \tableofcontents
+}
+\pagebreak
+\section{Problema}
+
+	Dos productos i y j están "invertidos" en las preferencias de A y B si el usuario
+	A prefiere el producto i antes que el j mientras que el usuario B prefiere el
+	producto j antes que el i.
+	Esto es, cuantas menos inversiones existan entre dos rankings, más similares
+	serán las preferencias de los usuarios representados por esos rankings.
+	Por ello, el objetivo del problema sería realizar un algoritmo que compruebe el
+	número de inversiones que existen entre un vector ordenado, y otro desordenado, sabiendo
+	que sus datos van desde 0 hasta n-1 sin que ninguno se repita.
+	
+\section{Algoritmo Obvio. Fuerza Bruta.}
+\subsection{Algoritmo}
+	El algoritmo de fuerza bruta comienza comparando la primera posición del vector que nos han dado con todas las demás posiciones del vector, comprobando si el número elegido (primera posición) es mayor que el número con el que se ha comparado. Si se cumpliese esta condición incrementaríamos una variable auxiliar para saber que está mal posicionado. Esta comparación hay que realizarla $n$ veces con todos los números que se encuentren dentro del vector (primer bucle), y además el número elegido debe de compararse con todos los demás números que aún no se hayan comprobado (segundo bucle). El problema de este algoritmo es que tiene una eficiencia muy mala, ya que daría $O(n^2)$, por culpa de los dos bucles anteriormente explicados.
+	\lstinputlisting[language=C++,label=Algoritmo de fuerza bruta,caption=Algoritmo de fuerza bruta]{fuerza_bruta.cpp}
+\subsection{Eficiencia teórica.}
+Tenemos dos bucles anidados, uno va desde 0 hasta el número de elementos y el otro (interior) va desde el índice del exterior más uno hasta el final, luego tenemos:
+
+$$\sum_{i=0}^{n}\sum_{i+1}^{n}1$$
+
+donde $\sum_{i+1}^{n}1=n-i$ y, al final tenemos, por tanto, $\sum_{i=0}^{n}\sum_{i+1}^{n}1 = \sum_{i=0}^{n}n-i$
+Luego tenemos:
+$$\sum_{i=0}^{n}n - \sum_{i=0}^{n}i  = n(n+1)-\frac{(n+1)n}{2}= \frac{(n+1)n}{2}=\frac{n^2+n}{2}$$
+
+Luego la eficiencia teórica del algoritmo de fuerza bruta es $O(n^2)$.
+\subsection{Eficiencia empírica.}
+\begin{figure}[!hbp]
+	\includegraphics[width=0.5\textwidth]{algoritmoMalo.png}
+	\caption{Algoritmo de fuerza bruta eficiencia empírica	\label{Algoritmo fuerza bruta empírico}}
+\end{figure}
+\subsection{Eficiencia híbrida.}
+\begin{figure}[!hbp]
+	\includegraphics[width=0.5\textwidth]{algoritmoMaloAjuste.png}
+	\caption{Algoritmo de fuerza bruta eficiencia híbrida	\label{Algoritmo fuerza bruta hibrido}}
+\end{figure}
+
+\begin{figure}[!htp]
+	\includegraphics[width=0.8\textwidth]{maloajuste}
+	\caption{Ajuste con $n^2$ del algoritmo fuerza bruta\label{AJustemal}}
+\end{figure}
+\pagebreak
+\section{Algoritmo Divide y Vencerás.}
+\subsection{Algoritmo}
+	\lstinputlisting[language=C++,label=Algoritmo `Divide y vencerás",caption=Algoritmo `Divide y vencerás"]{algoritmoBueno.cpp}
+	La solución que hemos planteado se basa en suponer que, dado el elemento más a la izquierda del vector no ordenado, el número de inversiones que tienen que ver con este será igual al número de elementos que hay a la izquierda del elemento en el vector ordenado (que es igual a la posición que ocupa en este). Ahora bien, si eliminamos de ambos vectores(ordenado y desordenado) el número que estaba más a la izquierda en el desordenado, este razonamiento se puede repetir hasta que no queden números en el vector.
+	
+	En un principio este algoritmo nos pareció acertado y decidimos implementarlo. Sin embargo, durante el proceso pudimos comprobar que la idea tenía un fallo teórico en la base y al medir la eficiencia empírica vimos que no se correspondía con los resultados esperados.
+	
+	Como no hemos tenido tiempo de plantear otro algoritmo y repetir el proceso, hemos decidido analizar el error y comentarlo.
+
+\subsection{Eficiencia teórica.}
+El algoritmo se basa en la función preferencias, que tiene $n$ iteraciones y en cada iteración llama a la función posición (que implementa una búsqueda binaria) que tiene una eficiencia $O(log(n))$ (aquí también se aplica el divide y vencerás). El problema del algoritmo es que necesita ir eliminando los elementos usados de los dos vectores que emplea y la eliminación en la estructura de datos $vector$ es $O(n)$ en lugar de $O(1)$ (que era lo que supusimos en un principio). También planteamos algunas alternativas para solucionar esto, como utilizar listas enlazadas (en las que la eliminación es $O(1)$), pero entonces no se podía implementar la búsqueda binaria y el tiempo de búsqueda pasaba a ser lineal(aún así la cosa mejoraría porque tendríamos una llamada $O(n)$ y una $O(1)$ en lugar de una $O(log(n))$ y otra $O(n)$ como es el caso, pero dado que la mejora no suponía superar al algoritmo que llamamos de fuerza bruta y que no hemos dispuesto de tiempo suficiente para repetir todo el proceso de desarrollo, hemos decidido dejarlo así. La mejor opción que se nos ocurrió fue implementar el algoritmo desde los dos extremos del vector (ya que la propiedad descrita es simétrica) y, haciendo la implementación con listas enlazadas, mantener un puntero a la mitad de la lista para hacer que la búsqueda fuera $\frac{n}{2}$. Así se mejoraría un poco el rendimiento pues se eliminarían los vectores de dos en dos y si estuvieran en la misma mitad del vector no habría que recorrerlo entero. Sin embargo, en el peor caso seguía siendo una búsqueda en $O(n)$ y el algoritmo seguía siendo igual o peor que el de fuerza bruta.
+
+\subsection{Eficiencia empírica.}
+\begin{figure}[!hbp]
+	\includegraphics[width=0.5\textwidth]{algBueno.png}
+	\caption{Algoritmo divide y vencerás sin ajuste	\label{Algoritmo divide y vencerás análisis empírico}}
+\end{figure}
+Al medir los tiempos de forma empírica ya pudimos intuir que algo no funcionaba como esperábamos. La curva de ejecución se adivina cuadrática.
+\subsection{Eficiencia híbrida.}
+\begin{figure}[!hbp]
+	\includegraphics[width=0.5\textwidth]{algBueno(log).png}
+	\caption{ Algoritmo divide y vencerás con ajuste log(n)	\label{Algoritmo divide y vencerás con ajuste log(n)}}
+\end{figure}
+Como es lógico, al intentar ajustar los tiempos a una función $nlogn$ los resultados obtenidos son evidentemente malos.
+\begin{figure}[!htp]
+	\includegraphics[width=0.8\textwidth]{dyvajuste1.png}
+	\caption{Ajuste con n log n del algoritmo DyV	\label{AJuste1}}
+\end{figure}
+
+Como se puede apreciar en la figura \ref{AJuste1}, el error es bastante grande (127\% en el parámetro b), por eso probamos a ajustarla con una función cuadrática y los resultados fueron más próximos, como era de esperar, pues el algoritmo tenía un mal fundamento teórico.
+
+\begin{figure}[!hbp]
+	\includegraphics[width=0.5\textwidth]{algBueno(n2).png}
+	\caption{ Algoritmo divide y vencerás con ajuste cuadrático	\label{Algoritmo divideyv ajuste cuadrativo}}
+\end{figure}
+
+\begin{figure}[!htp]
+	\includegraphics[width=0.8\textwidth]{dyvajuste2.png}
+	\caption{Ajuste con $n^2$ del algoritmo DyV	\label{AJuste2}}
+\end{figure}
+
+En este caso los tiempos medidos sí que se ajustan a la función, dando evidencia de que el algoritmo genera tiempos igual o peores que los del algoritmo base que planteamos como "mala solución". Como se puede apreciar en las fotos de los ajustes, los índices de error ahora son mucho menores por lo que concluimos que la función tiene un tiempo cuadrático. Basta con deducir que si el tiempo de la eliminación es los vectores es lineal y el de la búsqueda logaritmico, por la regla de la suma prevalece la parte lineal de la eliminación y el algoritmo en cada iteración es lineal. Como se ejecuta en todos los elementos, tenemos $n\times n$ y aparece esa eficiencia cuadrática.
+
+\section{Comparación y conclusiones.}
+La comparación es obvia, la idea que hemos propuesto es incluso peor que la inicial (no las hemos comparado gráficamente porque la diferencia es irrelevante, la conclusión es que la solución propuesta es totalmente desechable).
+
+De esta practica hemos aprendido que hay que darle más importancia al análisis teórico de los algoritmos antes de molestarse en implementarlos y mucho menos en realizar mediciones, solucionar errores y demás.
+
+
+
+
+
+\end{document}

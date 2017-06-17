@@ -1,0 +1,47 @@
+##############MERGESORT####################
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 4.34068e-05      +/- 2.013e-05    (46.38%)
+b               = 0.901865         +/- 3.606        (399.8%)
+c               = 0.00511096       +/- 0.01734      (339.2%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.999  1.000 
+c               0.882 -0.896  1.000 
+
+##############QUICKSORT####################
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 3.02225e-09      +/- 1.214e-07    (4018%)
+b               = 0.901855         +/- 312.4        (3.464e+04%)
+c               = 0.00171908       +/- 0.0001046    (6.083%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.999  1.000 
+c               0.882 -0.896  1.000 
+
+##############HEAPSORT####################
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 3.02225e-09      +/- 1.214e-07    (4018%)
+b               = 0.901855         +/- 312.4        (3.464e+04%)
+c               = 0.00171908       +/- 0.0001046    (6.083%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.999  1.000 
+c               0.882 -0.896  1.000 

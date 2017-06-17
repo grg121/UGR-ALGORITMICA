@@ -1,0 +1,201 @@
+tamaño	tiempo	algoritmo	pc	optimización
+
+200	0.00605616960526	quicksort	MasOSx	No_Ordenados
+
+400	0.00605311098099	quicksort	MasOSx	No_Ordenados
+
+600	0.00611862888336	quicksort	MasOSx	No_Ordenados
+
+800	0.00609828004837	quicksort	MasOSx	No_Ordenados
+
+1000	0.00613305807114	quicksort	MasOSx	No_Ordenados
+
+1200	0.00609910964966	quicksort	MasOSx	No_Ordenados
+
+1400	0.00609268903732	quicksort	MasOSx	No_Ordenados
+
+1600	0.00618777990341	quicksort	MasOSx	No_Ordenados
+
+1800	0.00603760957718	quicksort	MasOSx	No_Ordenados
+
+2000	0.00619359016418	quicksort	MasOSx	No_Ordenados
+
+2200	0.0061104798317	quicksort	MasOSx	No_Ordenados
+
+2400	0.00627904176712	quicksort	MasOSx	No_Ordenados
+
+2600	0.00629534959793	quicksort	MasOSx	No_Ordenados
+
+2800	0.00622720003128	quicksort	MasOSx	No_Ordenados
+
+3000	0.00615082025528	quicksort	MasOSx	No_Ordenados
+
+3200	0.0061067199707	quicksort	MasOSx	No_Ordenados
+
+3400	0.00637162923813	quicksort	MasOSx	No_Ordenados
+
+3600	0.00631745815277	quicksort	MasOSx	No_Ordenados
+
+3800	0.00652078866959	quicksort	MasOSx	No_Ordenados
+
+4000	0.00638489961624	quicksort	MasOSx	No_Ordenados
+
+4200	0.00632287979126	quicksort	MasOSx	No_Ordenados
+
+4400	0.00635522842407	quicksort	MasOSx	No_Ordenados
+
+4600	0.00643187999725	quicksort	MasOSx	No_Ordenados
+
+4800	0.00644930124283	quicksort	MasOSx	No_Ordenados
+
+5000	0.00649923086166	quicksort	MasOSx	No_Ordenados
+
+5200	0.00660006999969	quicksort	MasOSx	No_Ordenados
+
+5400	0.00653810977936	quicksort	MasOSx	No_Ordenados
+
+5600	0.00648699045181	quicksort	MasOSx	No_Ordenados
+
+5800	0.00669430017471	quicksort	MasOSx	No_Ordenados
+
+6000	0.00643836975098	quicksort	MasOSx	No_Ordenados
+
+6200	0.00674255847931	quicksort	MasOSx	No_Ordenados
+
+6400	0.00662518024445	quicksort	MasOSx	No_Ordenados
+
+6600	0.00660690069199	quicksort	MasOSx	No_Ordenados
+
+6800	0.00661521196365	quicksort	MasOSx	No_Ordenados
+
+7000	0.00661703109741	quicksort	MasOSx	No_Ordenados
+
+7200	0.00680947065353	quicksort	MasOSx	No_Ordenados
+
+7400	0.00672621011734	quicksort	MasOSx	No_Ordenados
+
+7600	0.00672232151031	quicksort	MasOSx	No_Ordenados
+
+7800	0.00691659927368	quicksort	MasOSx	No_Ordenados
+
+8000	0.00692208051682	quicksort	MasOSx	No_Ordenados
+
+8200	0.0068772315979	quicksort	MasOSx	No_Ordenados
+
+8400	0.00690888881683	quicksort	MasOSx	No_Ordenados
+
+8600	0.00689867019653	quicksort	MasOSx	No_Ordenados
+
+8800	0.00692255020142	quicksort	MasOSx	No_Ordenados
+
+9000	0.00701047182083	quicksort	MasOSx	No_Ordenados
+
+9200	0.00711667060852	quicksort	MasOSx	No_Ordenados
+
+9400	0.00703196048737	quicksort	MasOSx	No_Ordenados
+
+9600	0.00708028078079	quicksort	MasOSx	No_Ordenados
+
+9800	0.00697653055191	quicksort	MasOSx	No_Ordenados
+
+10000	0.00713057041168	quicksort	MasOSx	No_Ordenados
+
+200	0.0059210395813	heapsort	MasOSx	No_Ordenados
+
+400	0.00589282035828	heapsort	MasOSx	No_Ordenados
+
+600	0.00600037097931	heapsort	MasOSx	No_Ordenados
+
+800	0.00594464063644	heapsort	MasOSx	No_Ordenados
+
+1000	0.00612265110016	heapsort	MasOSx	No_Ordenados
+
+1200	0.00616246938705	heapsort	MasOSx	No_Ordenados
+
+1400	0.00618780851364	heapsort	MasOSx	No_Ordenados
+
+1600	0.00630570888519	heapsort	MasOSx	No_Ordenados
+
+1800	0.00631669998169	heapsort	MasOSx	No_Ordenados
+
+2000	0.00630815982819	heapsort	MasOSx	No_Ordenados
+
+2200	0.00614722013474	heapsort	MasOSx	No_Ordenados
+
+2400	0.00623992919922	heapsort	MasOSx	No_Ordenados
+
+2600	0.0062794303894	heapsort	MasOSx	No_Ordenados
+
+2800	0.00647115945816	heapsort	MasOSx	No_Ordenados
+
+3000	0.0063606095314	heapsort	MasOSx	No_Ordenados
+
+3200	0.00649082183838	heapsort	MasOSx	No_Ordenados
+
+3400	0.00650099039078	heapsort	MasOSx	No_Ordenados
+
+3600	0.00649198055267	heapsort	MasOSx	No_Ordenados
+
+3800	0.0065517783165	heapsort	MasOSx	No_Ordenados
+
+4000	0.00670678138733	heapsort	MasOSx	No_Ordenados
+
+4200	0.0065261220932	heapsort	MasOSx	No_Ordenados
+
+4400	0.00670826911926	heapsort	MasOSx	No_Ordenados
+
+4600	0.00672530889511	heapsort	MasOSx	No_Ordenados
+
+4800	0.00689562797546	heapsort	MasOSx	No_Ordenados
+
+5000	0.0069016289711	heapsort	MasOSx	No_Ordenados
+
+5200	0.00689893007278	heapsort	MasOSx	No_Ordenados
+
+5400	0.00691106081009	heapsort	MasOSx	No_Ordenados
+
+5600	0.00693121910095	heapsort	MasOSx	No_Ordenados
+
+5800	0.00692040920258	heapsort	MasOSx	No_Ordenados
+
+6000	0.00710811853409	heapsort	MasOSx	No_Ordenados
+
+6200	0.00694427967072	heapsort	MasOSx	No_Ordenados
+
+6400	0.00714765787125	heapsort	MasOSx	No_Ordenados
+
+6600	0.00703474998474	heapsort	MasOSx	No_Ordenados
+
+6800	0.00728460788727	heapsort	MasOSx	No_Ordenados
+
+7000	0.00737800121307	heapsort	MasOSx	No_Ordenados
+
+7200	0.00721831083298	heapsort	MasOSx	No_Ordenados
+
+7400	0.0073135304451	heapsort	MasOSx	No_Ordenados
+
+7600	0.00721587181091	heapsort	MasOSx	No_Ordenados
+
+7800	0.00745400905609	heapsort	MasOSx	No_Ordenados
+
+8000	0.00741328001022	heapsort	MasOSx	No_Ordenados
+
+8200	0.0074148607254	heapsort	MasOSx	No_Ordenados
+
+8400	0.00748826980591	heapsort	MasOSx	No_Ordenados
+
+8600	0.00748469114304	heapsort	MasOSx	No_Ordenados
+
+8800	0.00764041185379	heapsort	MasOSx	No_Ordenados
+
+9000	0.00742277860641	heapsort	MasOSx	No_Ordenados
+
+9200	0.00747223854065	heapsort	MasOSx	No_Ordenados
+
+9400	0.00763387918472	heapsort	MasOSx	No_Ordenados
+
+9600	0.00766546010971	heapsort	MasOSx	No_Ordenados
+
+9800	0.0077915096283	heapsort	MasOSx	No_Ordenados
+
+10000	0.00783952951431	heapsort	MasOSx	No_Ordenados

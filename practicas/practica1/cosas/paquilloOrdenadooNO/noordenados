@@ -1,0 +1,203 @@
+tamaño	tiempo	algoritmo	pc	ordenado
+
+200	0.00674200057983	heapsort	MacOSx	No_Ordenado
+
+400	0.00874590873718	heapsort	MacOSx	No_Ordenado
+
+600	0.00844597816467	heapsort	MacOSx	No_Ordenado
+
+800	0.0101540088654	heapsort	MacOSx	No_Ordenado
+
+1000	0.0140669345856	heapsort	MacOSx	No_Ordenado
+
+1200	0.0106709003448	heapsort	MacOSx	No_Ordenado
+
+1400	0.00973200798035	heapsort	MacOSx	No_Ordenado
+
+1600	0.0114829540253	heapsort	MacOSx	No_Ordenado
+
+1800	0.0132551193237	heapsort	MacOSx	No_Ordenado
+
+2000	0.0110998153687	heapsort	MacOSx	No_Ordenado
+
+2200	0.0125508308411	heapsort	MacOSx	No_Ordenado
+
+2400	0.00979089736938	heapsort	MacOSx	No_Ordenado
+
+2600	0.00928401947021	heapsort	MacOSx	No_Ordenado
+
+2800	0.0100100040436	heapsort	MacOSx	No_Ordenado
+
+3000	0.0098021030426	heapsort	MacOSx	No_Ordenado
+
+3200	0.0110580921173	heapsort	MacOSx	No_Ordenado
+
+3400	0.00928020477295	heapsort	MacOSx	No_Ordenado
+
+3600	0.0106389522552	heapsort	MacOSx	No_Ordenado
+
+3800	0.0103690624237	heapsort	MacOSx	No_Ordenado
+
+4000	0.00735211372375	heapsort	MacOSx	No_Ordenado
+
+4200	0.0084490776062	heapsort	MacOSx	No_Ordenado
+
+4400	0.00656986236572	heapsort	MacOSx	No_Ordenado
+
+4600	0.00832986831665	heapsort	MacOSx	No_Ordenado
+
+4800	0.00667285919189	heapsort	MacOSx	No_Ordenado
+
+5000	0.00855898857117	heapsort	MacOSx	No_Ordenado
+
+5200	0.00681114196777	heapsort	MacOSx	No_Ordenado
+
+5400	0.00660109519958	heapsort	MacOSx	No_Ordenado
+
+5600	0.00738406181335	heapsort	MacOSx	No_Ordenado
+
+5800	0.00860190391541	heapsort	MacOSx	No_Ordenado
+
+6000	0.00816488265991	heapsort	MacOSx	No_Ordenado
+
+6200	0.00691986083984	heapsort	MacOSx	No_Ordenado
+
+6400	0.0101029872894	heapsort	MacOSx	No_Ordenado
+
+6600	0.0078341960907	heapsort	MacOSx	No_Ordenado
+
+6800	0.009929895401	heapsort	MacOSx	No_Ordenado
+
+7000	0.00827193260193	heapsort	MacOSx	No_Ordenado
+
+7200	0.00792694091797	heapsort	MacOSx	No_Ordenado
+
+7400	0.00700998306274	heapsort	MacOSx	No_Ordenado
+
+7600	0.00912189483643	heapsort	MacOSx	No_Ordenado
+
+7800	0.00744390487671	heapsort	MacOSx	No_Ordenado
+
+8000	0.00891304016113	heapsort	MacOSx	No_Ordenado
+
+8200	0.00710296630859	heapsort	MacOSx	No_Ordenado
+
+8400	0.007239818573	heapsort	MacOSx	No_Ordenado
+
+8600	0.00881600379944	heapsort	MacOSx	No_Ordenado
+
+8800	0.00744390487671	heapsort	MacOSx	No_Ordenado
+
+9000	0.00766515731812	heapsort	MacOSx	No_Ordenado
+
+9200	0.00941181182861	heapsort	MacOSx	No_Ordenado
+
+9400	0.00747895240784	heapsort	MacOSx	No_Ordenado
+
+9600	0.00956296920776	heapsort	MacOSx	No_Ordenado
+
+9800	0.00752806663513	heapsort	MacOSx	No_Ordenado
+
+10000	0.0100660324097	heapsort	MacOSx	No_Ordenado
+
+
+200	0.00604891777039	quicksort	MacOSx	No_Ordenado
+
+400	0.00621294975281	quicksort	MacOSx	No_Ordenado
+
+600	0.00970005989075	quicksort	MacOSx	No_Ordenado
+
+800	0.00795102119446	quicksort	MacOSx	No_Ordenado
+
+1000	0.00954699516296	quicksort	MacOSx	No_Ordenado
+
+1200	0.00910091400146	quicksort	MacOSx	No_Ordenado
+
+1400	0.00919818878174	quicksort	MacOSx	No_Ordenado
+
+1600	0.00821614265442	quicksort	MacOSx	No_Ordenado
+
+1800	0.00991201400757	quicksort	MacOSx	No_Ordenado
+
+2000	0.00964188575745	quicksort	MacOSx	No_Ordenado
+
+2200	0.0070469379425	quicksort	MacOSx	No_Ordenado
+
+2400	0.0098659992218	quicksort	MacOSx	No_Ordenado
+
+2600	0.0102860927582	quicksort	MacOSx	No_Ordenado
+
+2800	0.00952386856079	quicksort	MacOSx	No_Ordenado
+
+3000	0.0076060295105	quicksort	MacOSx	No_Ordenado
+
+3200	0.00959801673889	quicksort	MacOSx	No_Ordenado
+
+3400	0.0102579593658	quicksort	MacOSx	No_Ordenado
+
+3600	0.0107119083405	quicksort	MacOSx	No_Ordenado
+
+3800	0.00700998306274	quicksort	MacOSx	No_Ordenado
+
+4000	0.00660991668701	quicksort	MacOSx	No_Ordenado
+
+4200	0.00631308555603	quicksort	MacOSx	No_Ordenado
+
+4400	0.00688004493713	quicksort	MacOSx	No_Ordenado
+
+4600	0.0076220035553	quicksort	MacOSx	No_Ordenado
+
+4800	0.00769209861755	quicksort	MacOSx	No_Ordenado
+
+5000	0.00865507125854	quicksort	MacOSx	No_Ordenado
+
+5200	0.00634598731995	quicksort	MacOSx	No_Ordenado
+
+5400	0.00859498977661	quicksort	MacOSx	No_Ordenado
+
+5600	0.0076789855957	quicksort	MacOSx	No_Ordenado
+
+5800	0.00789308547974	quicksort	MacOSx	No_Ordenado
+
+6000	0.00644207000732	quicksort	MacOSx	No_Ordenado
+
+6200	0.00647187232971	quicksort	MacOSx	No_Ordenado
+
+6400	0.0065438747406	quicksort	MacOSx	No_Ordenado
+
+6600	0.00719976425171	quicksort	MacOSx	No_Ordenado
+
+6800	0.00758385658264	quicksort	MacOSx	No_Ordenado
+
+7000	0.0065290927887	quicksort	MacOSx	No_Ordenado
+
+7200	0.00844216346741	quicksort	MacOSx	No_Ordenado
+
+7400	0.0069739818573	quicksort	MacOSx	No_Ordenado
+
+7600	0.00865793228149	quicksort	MacOSx	No_Ordenado
+
+7800	0.00704216957092	quicksort	MacOSx	No_Ordenado
+
+8000	0.010302066803	quicksort	MacOSx	No_Ordenado
+
+8200	0.00679397583008	quicksort	MacOSx	No_Ordenado
+
+8400	0.00884199142456	quicksort	MacOSx	No_Ordenado
+
+8600	0.00848698616028	quicksort	MacOSx	No_Ordenado
+
+8800	0.00897097587585	quicksort	MacOSx	No_Ordenado
+
+9000	0.00681591033936	quicksort	MacOSx	No_Ordenado
+
+9200	0.00674390792847	quicksort	MacOSx	No_Ordenado
+
+9400	0.00749897956848	quicksort	MacOSx	No_Ordenado
+
+9600	0.00794219970703	quicksort	MacOSx	No_Ordenado
+
+9800	0.00930881500244	quicksort	MacOSx	No_Ordenado
+
+10000	0.00916194915771	quicksort	MacOSx	No_Ordenado
+

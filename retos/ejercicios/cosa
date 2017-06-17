@@ -1,0 +1,122 @@
+
+
+
+\section{IDEA 1 problema inverso ( No funciona, descartada). } 
+
+Para plantear un algoritmo quizá sería buena idea plantear antes una 
+estructura de datos que almacenara de forma comprensible los datos que 
+necesitamos para resolver el problema. Por plantear el problema de una 
+forma distinta, se me ocurre que podríamos almacenar no el número que 
+hay en cada casilla del sudoku, sino la casilla donde se almacenará cada 
+número de una sección. Me explico:
+
+Si denominamos sección a cada una de las agrupaciones de 9 casillas 
+(cada casilla es un hueco para un único número) que forma el sudoku, y 
+atendiendo a las reglas del sudoku, podemos afirmar que cada sección 
+(para que el sudoku quede resuelto) debe tener todos los números del 1 
+al 9 repartidos entre sus casillas (obviamente, sin repeticiones pues 
+solo tiene 9 casillas). Entonces, podemos definir una estructura llamada 
+casilla que establezca la posición (fila y columna) de un número dentro 
+de una sección, en lugar de hacer (por ejemplo) una matriz de enteros 
+que almacene en cada posición el entero correspondiente. Así, podemos 
+plantear el problema como: 
+
+\textbf{Quiero asignar, para cada sección del sudoku samurai, para cada 
+número del 1 al 9, una posición dentro de la sección.}
+
+
+
+Si, por ejemplo, numeramos las filas y columnas del 1 al 3 (dentro de 
+una sección) y establecemos unas estructuras del tipo:
+
+\begin{itemize}
+	\item casilla: contiene la solución a cada número, su posición 
+formada por dos enteros que representan fila y columna. 
+	\item numero:  la ubicación correspondiente al número (una 
+casilla) y los bloqueos que tiene, es decir, las filas y las columnas 
+donde \textbf{no} puede ir el número en cuestión.
+	\item sección: un array de datos de tipo 'número' con 9 datos 
+que representaran los números del 1 al 9 (cada número i estará en la 
+posición i-1), y las secciones que influyen a esta sección distribuidas 
+por filas o columnas según corresponda. Además tendrá un recuento de 
+números colocados en la sección. 
+	\item samurai: contiene las distintas secciones del samurai y un 
+vector con el número de datos insertados en cada fila y en cada columna 
+de cada sudoku (las esquinas compartidas suman a varias filas y varias 
+columnas).
+\end{itemize}
+ 
+\pagebreak
+
+En función de la implementación que se de, y del lenguaje, esto se podrá 
+hacer de muchas formas distintas. Partiendo de esta base, y teniendo en 
+cuenta que solo podemos saber con certeza la posición de un número si: 
+\begin{itemize}
+	\item la columna está completa salvo una posición, entonces el 
+número que falta va ahí.
+	\item la sección está completa salvo una posición, entonces el 
+número que falta va ahí.
+	\item la fila está completa salvo una posición, entonces el 
+número que falta va ahí.
+	\item el número no se puede colocar en ninguna posición salvo en 
+una concreta, entonces colocamos el número en esa posición.
+\end{itemize} 
+
+un posible algoritmo sería:
+
+
+\begin{itemize}
+	\item para cada sección: 
+		\begin{itemize}
+			\item para cada número del 1 al 9, si no está 
+ubicado: 
+			\begin{itemize}
+				\item si la sección está casi completa 
+(falta un número), se comprueba qué número falta y se asigna.
+				\item si alguna fila o columna está casi 
+completa(le falta un número), se comprueba qué número falta y se asigna 
+en la sección que corresponda.
+				\item si se ha cumplido alguna de las 
+dos anteriores condiciones, se retrocede hasta la primera de estas por 
+si hubiera provocado que se vuelva a cumplir una de ellas.  
+				\item para cada sección que comparta 
+fila/columna con esta: 
+				\begin{itemize}
+					\item si el número está ubicado 
+(tiene su posición establecida) en esa sección, entonces:
+					añadimos el bloqueo que 
+corresponda (fila o columna) al número en la sección actual.
+				\end{itemize}
+				\item si el número de filas bloqueadas y 
+el de columnas bloqueadas es 2, entonces sabemos dónde ubicar el número, 
+hacemos:
+				\begin{itemize} 
+				\item establecemos la posición del 
+número y añadimos uno a cada contador de colocados correspondiente. 
+				\item bloqueamos la fila y columna donde 
+hemos establecido la posición del número para el mismo número en las 
+secciones dónde corresponda, y comprobamos 'recursivamente' si la 
+posición del número en secciones relacionadas ha quedado clara de forma 
+inequívoca (es decir, repetimos este punto desde que comprobamos que el 
+número de filas y columnas era 2 hasta ahora pero en las secciones que 
+se han visto afectadas, tantas veces como sea necesario hasta que el 
+número no sea ubicable en ninguna otra sección)
+				\end{itemize} 
+			\end{itemize}
+		\end{itemize}
+	\item repetimos desde el principio mientras se ubiquen nuevos 
+números
+	\item si llegados a este punto no se ha completado el sudoku, 
+significaría que no hay números cuya posición sea inequívoca solo 
+teniendo en cuenta los bloqueos. Entonces tenemos que ver si existen 
+números que, aunque pueden ser colocados en varias casillas, deben de 
+colocarse en una concreta pues son los únicos que pueden colocarse ahí 
+(los demás la tienen bloqueada) dentro de cada sección, esto es: 
+
+\end{itemize}
+
+Esta forma de afrontar el problema parece demasiado compleja, además si 
+se piensa bien no tiene sentido esperar a que queden bloqueadas 2 filas 
+y 2 columnas porque esto no tiene por qué ocurrir en ningún momento (ya 
+que los demás números ubicados también eliminan posiciones dónde ubicar)
+

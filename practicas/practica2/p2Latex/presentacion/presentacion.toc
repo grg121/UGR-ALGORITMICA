@@ -1,0 +1,15 @@
+\select@language {spanish}
+\beamer@endinputifotherversion {3.36pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Problema}{3}{0}{1}
+\beamer@sectionintoc {2}{Algoritmo Obvio. Fuerza Bruta.}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Algoritmo}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Eficiencia te\IeC {\'o}rica.}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Eficiencia emp\IeC {\'\i }rica.}{9}{0}{2}
+\beamer@subsectionintoc {2}{4}{Eficiencia h\IeC {\'\i }brida.}{11}{0}{2}
+\beamer@sectionintoc {3}{Algoritmo Divide y Vencer\IeC {\'a}s.}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algoritmo}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Eficiencia te\IeC {\'o}rica.}{16}{0}{3}
+\beamer@subsectionintoc {3}{3}{Eficiencia emp\IeC {\'\i }rica.}{19}{0}{3}
+\beamer@subsectionintoc {3}{4}{Eficiencia h\IeC {\'\i }brida.}{22}{0}{3}
+\beamer@sectionintoc {4}{Comparaci\IeC {\'o}n y conclusiones.}{28}{0}{4}

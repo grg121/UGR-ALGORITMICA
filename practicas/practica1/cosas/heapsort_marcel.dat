@@ -1,0 +1,101 @@
+tamaño	tiempo	algoritmo	pc	optimización
+
+200	0.00319555044174	heapsort	toshiba_marcel	2
+
+400	0.00335548877716	heapsort	toshiba_marcel	2
+
+600	0.00345514059067	heapsort	toshiba_marcel	2
+
+800	0.00336249828339	heapsort	toshiba_marcel	2
+
+1000	0.00321976900101	heapsort	toshiba_marcel	2
+
+1200	0.00343673944473	heapsort	toshiba_marcel	2
+
+1400	0.00351489067078	heapsort	toshiba_marcel	2
+
+1600	0.0035847401619	heapsort	toshiba_marcel	2
+
+1800	0.00365335941315	heapsort	toshiba_marcel	2
+
+2000	0.00357595920563	heapsort	toshiba_marcel	2
+
+2200	0.00349829912186	heapsort	toshiba_marcel	2
+
+2400	0.00367141008377	heapsort	toshiba_marcel	2
+
+2600	0.00382791042328	heapsort	toshiba_marcel	2
+
+2800	0.00386935949326	heapsort	toshiba_marcel	2
+
+3000	0.00383838176727	heapsort	toshiba_marcel	2
+
+3200	0.00378278970718	heapsort	toshiba_marcel	2
+
+3400	0.00375519037247	heapsort	toshiba_marcel	2
+
+3600	0.00406034946442	heapsort	toshiba_marcel	2
+
+3800	0.00404174089432	heapsort	toshiba_marcel	2
+
+4000	0.00395467042923	heapsort	toshiba_marcel	2
+
+4200	0.00413768053055	heapsort	toshiba_marcel	2
+
+4400	0.00407309055328	heapsort	toshiba_marcel	2
+
+4600	0.00395926952362	heapsort	toshiba_marcel	2
+
+4800	0.0041841006279	heapsort	toshiba_marcel	2
+
+5000	0.00409993886948	heapsort	toshiba_marcel	2
+
+5200	0.004364798069	heapsort	toshiba_marcel	2
+
+5400	0.00430423974991	heapsort	toshiba_marcel	2
+
+5600	0.00455767869949	heapsort	toshiba_marcel	2
+
+5800	0.0046072101593	heapsort	toshiba_marcel	2
+
+6000	0.00450935125351	heapsort	toshiba_marcel	2
+
+6200	0.00420434951782	heapsort	toshiba_marcel	2
+
+6400	0.0044642496109	heapsort	toshiba_marcel	2
+
+6600	0.00448349952698	heapsort	toshiba_marcel	2
+
+6800	0.00440348148346	heapsort	toshiba_marcel	2
+
+7000	0.00441354036331	heapsort	toshiba_marcel	2
+
+7200	0.00458560943604	heapsort	toshiba_marcel	2
+
+7400	0.00456762075424	heapsort	toshiba_marcel	2
+
+7600	0.00480202913284	heapsort	toshiba_marcel	2
+
+7800	0.00444237947464	heapsort	toshiba_marcel	2
+
+8000	0.00503334999084	heapsort	toshiba_marcel	2
+
+8200	0.00471573114395	heapsort	toshiba_marcel	2
+
+8400	0.00448824167252	heapsort	toshiba_marcel	2
+
+8600	0.0050350689888	heapsort	toshiba_marcel	2
+
+8800	0.00495131015778	heapsort	toshiba_marcel	2
+
+9000	0.00493479013443	heapsort	toshiba_marcel	2
+
+9200	0.00481437206268	heapsort	toshiba_marcel	2
+
+9400	0.00486366033554	heapsort	toshiba_marcel	2
+
+9600	0.005237159729	heapsort	toshiba_marcel	2
+
+9800	0.00521461009979	heapsort	toshiba_marcel	2
+
+10000	0.00520783185959	heapsort	toshiba_marcel	2

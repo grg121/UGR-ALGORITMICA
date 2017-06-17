@@ -1,0 +1,101 @@
+tamaño	tiempo	algoritmo	pc
+
+200	0.00646495819092	insercion	MacOSx	
+
+400	0.00774002075195	insercion	MacOSx	
+
+600	0.00903511047363	insercion	MacOSx	
+
+800	0.00844693183899	insercion	MacOSx	
+
+1000	0.010066986084	insercion	MacOSx	
+
+1200	0.0111799240112	insercion	MacOSx	
+
+1400	0.0110030174255	insercion	MacOSx	
+
+1600	0.0118720531464	insercion	MacOSx	
+
+1800	0.0134470462799	insercion	MacOSx	
+
+2000	0.0175271034241	insercion	MacOSx	
+
+2200	0.0157430171967	insercion	MacOSx	
+
+2400	0.0180540084839	insercion	MacOSx	
+
+2600	0.0178670883179	insercion	MacOSx	
+
+2800	0.0168290138245	insercion	MacOSx	
+
+3000	0.0209879875183	insercion	MacOSx	
+
+3200	0.017657995224	insercion	MacOSx	
+
+3400	0.0205731391907	insercion	MacOSx	
+
+3600	0.0202531814575	insercion	MacOSx	
+
+3800	0.0226819515228	insercion	MacOSx	
+
+4000	0.0264990329742	insercion	MacOSx	
+
+4200	0.0263199806213	insercion	MacOSx	
+
+4400	0.0289151668549	insercion	MacOSx	
+
+4600	0.0345001220703	insercion	MacOSx	
+
+4800	0.0328722000122	insercion	MacOSx	
+
+5000	0.0333881378174	insercion	MacOSx	
+
+5200	0.0382940769196	insercion	MacOSx	
+
+5400	0.0394079685211	insercion	MacOSx	
+
+5600	0.0393769741058	insercion	MacOSx	
+
+5800	0.0422809123993	insercion	MacOSx	
+
+6000	0.0445880889893	insercion	MacOSx	
+
+6200	0.0608451366425	insercion	MacOSx	
+
+6400	0.0630099773407	insercion	MacOSx	
+
+6600	0.0558168888092	insercion	MacOSx	
+
+6800	0.0554180145264	insercion	MacOSx	
+
+7000	0.0578711032867	insercion	MacOSx	
+
+7200	0.0605490207672	insercion	MacOSx	
+
+7400	0.0683150291443	insercion	MacOSx	
+
+7600	0.0730609893799	insercion	MacOSx	
+
+7800	0.0746159553528	insercion	MacOSx	
+
+8000	0.0741000175476	insercion	MacOSx	
+
+8200	0.0812311172485	insercion	MacOSx	
+
+8400	0.0879368782043	insercion	MacOSx	
+
+8600	0.0912461280823	insercion	MacOSx	
+
+8800	0.0909161567688	insercion	MacOSx	
+
+9000	0.0914328098297	insercion	MacOSx	
+
+9200	0.0954840183258	insercion	MacOSx	
+
+9400	0.0997967720032	insercion	MacOSx	
+
+9600	0.114572048187	insercion	MacOSx	
+
+9800	0.117418050766	insercion	MacOSx	
+
+10000	0.121224880219	insercion	MacOSx	

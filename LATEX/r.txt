@@ -1,0 +1,2 @@
+f <- ggplot(data.frame(x = c(0, 10)), aes(x,width=30))
+f + stat_function(fun = sin, colour = "red")
